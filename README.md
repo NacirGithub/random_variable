@@ -18,7 +18,7 @@ This project generates random numbers according to different probability distrib
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/random-number-generator.git
+   git clone https://github.com/NacirGithub/random_variable.git
 
 2. **Install the required dependencies**:
    ```bash
