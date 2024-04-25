@@ -1,0 +1,281 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+\usepackage{graphicx,epstopdf,url}
+\usepackage{subcaption}
+\usepackage{hyperref}
+
+\usepackage[top=0.8in, bottom=1in, left=1in, right=1in]{geometry}
+
+\title{NCA - Lab report \\
+
+Random number generation
+}
+\author{\bf{Group 2} \\ \\
+        Kilton SIMÕES \\
+        Nacir IBRAIMO  \\
+         \\
+}
+
+\date{19 April 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This report presents the results of a random number generator program.
+The simulator generates random numbers across various distributions and sample sizes using Python and libraries like NumPy and Matplotlib. It allows users to input their group number, which serves as the seed value for reproducibility. However, limitations include its reliance on pseudo-random number generation and potential biases introduced by the chosen distributions and sample sizes.
+\section{Results}
+
+In the results section, the main parameters and their corresponding values are presented in a table below.
+Each combination of distribution and sample size results in a unique set of random numbers, which are then analyzed and visualized through histograms to understand their distribution characteristics.
+
+\subsection{Main parameters and their values}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|} \hline
+        Distribution & Sample Sizes  \\ \hline
+        Uniform (int) & 10, 100, 1000, 10000 \\ \hline
+        Uniform (double) & 10, 100, 1000, 10000 \\ \hline
+        Normal & 10, 100, 1000, 10000 \\ \hline
+        Exponential & 10, 100, 1000, 10000 \\ \hline
+        Geometric & 10, 100, 1000, 10000 \\ \hline
+    \end{tabular}
+    \caption{Sample Sizes for Different Distributions}
+    \label{tab:my_label}
+\end{table}
+
+\subsection{Generated figures}
+
+\subsection{Uniform (int) Distribution}
+Generate random integers uniformly distributed between 10 and 30 values with different sample sizes.\\
+\\
+% \textbf{Note}: 'n' represents the number of random integers generated.
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Uniform_(int)_sample_10.png}
+        \caption{sample size 10}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Uniform_(int)_sample_100.png} 
+        \caption{sample size 100}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Uniform(int) distribution with sample size of 10 and 100}
+    \label{fig:main}
+\end{figure}
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Uniform_(int)_sample_1000.png}
+        \caption{sample size 1000}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Uniform_(int)_sample_10000.png} 
+        \caption{sample size 10000}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Uniform(int) distribution with sample size of 1000 and 10000}
+    \label{fig:main}
+\end{figure}
+
+\subsection{Uniform (double) Distribution}
+Generate random double values uniformly distributed between 1.0 and 3.0 values with different sample sizes.\\
+\\
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Uniform_(double)_sample_10.png}
+        \caption{sample size 10}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Uniform_(double)_sample_100.png} 
+        \caption{sample size 100}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Uniform(double) distribution with sample size of 10 and 100}
+    \label{fig:main}
+\end{figure}
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Uniform_(double)_sample_1000.png}
+        \caption{sample size 1000}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Uniform_(double)_sample_10000.png} 
+        \caption{sample size 10000}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Uniform(double) distribution with sample size of 1000 and 10000}
+    \label{fig:main}
+\end{figure}
+
+\subsection{Normal Distribution}
+Generate random numbers from a normal distribution with mean 0 and standard deviation 0.75 with different sample sizes.\\
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Normal_sample_10.png}
+        \caption{sample size 10}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Normal_sample_100.png} 
+        \caption{sample size 100}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Normal distribution with sample size of 10 and 100}
+    \label{fig:main}
+\end{figure}
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Normal_sample_1000.png}
+        \caption{sample size 10}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Normal_sample_10000.png} 
+        \caption{sample size 100}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Normal distribution with sample size of 1000 and 10000}
+    \label{fig:main}
+\end{figure}
+
+\newpage
+
+\subsection{Exponential Distribution}
+Generate random numbers from an exponential distribution with mean 2. with different sample sizes.\\
+In the exponential distribution, the mean (denoted as μ) represents the average time or rate at which events occur.
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Exponential_sample_10.png}
+        \caption{sample size 10}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Exponential_sample_100.png} 
+        \caption{sample size 100}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Exponential distribution with sample size of 10 and 100}
+    \label{fig:main}
+\end{figure}
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Exponential_sample_1000.png}
+        \caption{sample size 1000}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Exponential_sample_10000.png} 
+        \caption{sample size 10000}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Exponential distribution with sample size of 1000 and 10000}
+    \label{fig:main}
+\end{figure}
+
+\newpage
+\subsection{Geometric Distribution}
+Generate random numbers from a geometric distribution with parameter 'p' determined by the group number divided by 10.0.\\
+The division by 10.0 scales the group number to ensure 'p' falls within the range [0, 1], which is required for the geometric distribution. n represents the number of random numbers generated.\\
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Geometric_sample_10.png}
+        \caption{sample size 10}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Geometric_sample_100.png} 
+        \caption{sample size 100}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Geometric distribution with sample size of 10 and 100}
+    \label{fig:main}
+\end{figure}
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Geometric_sample_1000.png}
+        \caption{sample size 1000}
+        \label{fig:sub1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Geometric_sample_10000.png} 
+        \caption{sample size 10000}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{a and b are Geometric distribution with sample size of 10 and 100}
+    \label{fig:main}
+\end{figure}
+
+
+
+\newpage
+
+\subsection{Code link}
+The source code for the random number generator simulator is available on GitHub. You can access it at the following link:
+\url{https://github.com/NacirGithub/random_variable}\\
+\\
+Please refer to the README.md file in the repository for instructions on how to set up and run the simulator.
+
+\section{Conclusion}
+
+The random number generator program successfully generates random numbers for various distributions and sample sizes. The histograms provide insights into the distribution characteristics of the generated numbers, aiding in statistical analysis and modeling tasks.
+Overall, this program serves as a valuable tool for generating and analyzing random numbers across different probability distributions and sample sizes.
+
+\end{document}
